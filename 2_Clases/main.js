@@ -10,7 +10,7 @@
 // Primera letra mayúscula y singular
 class Auto {
     // MÉTODO ESPECIAL => TODAS LAS CLASES
-    // Primero en ejecutarse 
+    // Primero en ejecutarse
     constructor(color, motor, matricula) {
         this.color = color;
         this.motor = motor;
@@ -25,7 +25,7 @@ class Auto {
     }
 
     cerrar() {
-        return "El auto " + this.color + " ha sido cerrado"; 
+        return "El auto " + this.color + " ha sido cerrado";
     }
 
     // Setters
@@ -36,7 +36,7 @@ class Auto {
 
     pintarAuto(nuevoColor) {
         this.color = nuevoColor;
-        return "Se ha pintado el auto"; 
+        return "Se ha pintado el auto";
     }
 
     // Getter
@@ -78,7 +78,7 @@ console.log(miAuto.obtenResumen());
      El constructor pide nombre, edad, género, peso y altura
 */
 
-/* 
+/*
 Crear una clase Cuenta que tenga los siguientes atributos y metodos:
 	 -Titular y cantidad
 	 -ingresar(cantidad)
