@@ -1,0 +1,20 @@
+{
+  "name": "5_request",
+  "version": "1.0.0",
+  "description": "Mi primer paquete de npm",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "request",
+    "pokemon"
+  ],
+  "author": "Gera",
+  "license": "ISC",
+  "repository": "https://github.com/gerardomdn95/b41-cintaroja-Gera",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
