@@ -1,0 +1,14 @@
+{
+  "name": "7_crud",
+  "version": "1.0.0",
+  "description": "Mi mprimer CRUD",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerardo",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
