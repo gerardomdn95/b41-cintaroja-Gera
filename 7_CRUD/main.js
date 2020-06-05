@@ -93,7 +93,7 @@ const updateAuthor = (id, nombre, apellido, biografia, genero, edad) => {
         const json = body;
         resolve(json);
       } else {
-        reject(response);
+        reject(response.statusCode);
       }
     });
   });
@@ -150,7 +150,7 @@ createAuthor('Nombre', 'Apellidos', 'Biografia', 'F', 89)
               .then((deletedAuthor) => {
                 console.log('Autor eliminado');
                 console.log(deletedAuthor);
-              }).catch((error) => console.log(4, error))
-          }).catch((error) => console.log(3, error))
-      }).catch((error) => console.log(2, error))
-  }).catch((error) => console.log(1, error));
+              }).catch((error) => console.log("Error al crear autor", error))
+          }).catch((error) => console.log("Error al obtener autor", error))
+      }).catch((error) => console.log("Error al modificar autor", error))
+  }).catch((error) => console.log("Error al elminar autor", error));
