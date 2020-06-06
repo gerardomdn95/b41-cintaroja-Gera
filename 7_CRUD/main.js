@@ -153,7 +153,7 @@ createAuthor('Gera', 'Cinta Roja', 'Algo', 'M', 24)
               .then((deletedAuthor) => {
                 console.log('Autor eliminado');
                 console.log(deletedAuthor);
-              }).catch((error) => console.log("Error al crear autor", error))
-          }).catch((error) => console.log("Error al obtener autor", error))
-      }).catch((error) => console.log("Error al modificar autor", error))
-  }).catch((error) => console.log("Error al elminar autor", error));
+              }).catch((error) => console.log("Error al eliminar autor", error))
+          }).catch((error) => console.log("Error al modificar autor", error))
+      }).catch((error) => console.log("Error al obtener autor", error))
+  }).catch((error) => console.log("Error al crear autor", error));
