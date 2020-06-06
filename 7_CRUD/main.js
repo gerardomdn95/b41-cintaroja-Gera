@@ -11,13 +11,15 @@ const createAuthor = (nombre, apellido, biografia, genero, edad) => {
   const URI = 'authors/';
   const ENDPOINT = URL_BASE + URI;
 
+  // Esto es lo que voy a enviar
   const jsonSend = {
     name: nombre,
     last_name: apellido,
-    nacionalidad: "MX",
+    nacionalidad: 'MX',
     biography: biografia,
     gender: genero,
-    age: edad
+    age: edad,
+    is_alive: true
   }
 
   return new Promise((resolve, reject) => {
@@ -134,9 +136,10 @@ const deleteAuthorByID = (id) => {
       crear, modificar y eliminar un autor.
 */
 
-createAuthor('Nombre', 'Apellidos', 'Biografia', 'F', 89)
+// CALLBACK HELL 🔥
+createAuthor('Gera', 'Cinta Roja', 'Algo', 'M', 24)
   .then((createdAuthor) => {
-    console.log('ID Autor creado');
+    console.log('Autor creado');
     console.log(createdAuthor);
     getAuthorByID(createdAuthor.id)
       .then((author) => {
