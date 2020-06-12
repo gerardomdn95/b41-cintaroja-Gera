@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Task = (props) => {
 
-  const ENDPOINT = 'https://to-do-devf.firebaseio.com/task/';
+  const ENDPOINT = '';
 
   const deleteTask = (id) => {
     axios.delete(`${ENDPOINT}${id}.json`)

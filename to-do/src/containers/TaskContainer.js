@@ -8,7 +8,7 @@ const TaskContainer = () => {
 
   // Aquí declaramos estados     valor inicial
   const [tasks, setTasks] = useState({});
-  const ENDPOINT = 'https://to-do-devf.firebaseio.com/task.json';
+  const ENDPOINT = '';
 
   // Crear métodos dentro de mi componente
   const getTasks = () => {
