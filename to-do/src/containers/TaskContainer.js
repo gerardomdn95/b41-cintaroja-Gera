@@ -1,19 +1,18 @@
 // Dentro de TaskContainer.js vamos a llamar a nuestras Task.js
 import React, { useEffect, useState } from 'react';
 import Task from '../components/Task';
-import Navbar from '../components/Navbar';
 import axios from 'axios';
 
 const TaskContainer = () => {
 
   // Aquí declaramos estados     valor inicial
   const [tasks, setTasks] = useState({});
-  const ENDPOINT = '';
+  const ENDPOINT = 'https://AQUIVAELTUYO.firebaseio.com/task.json';
 
   // Crear métodos dentro de mi componente
   const getTasks = () => {
     axios.get(ENDPOINT)
-      .then((body) => setTasks(body.data))
+      .then((res) => setTasks(res.data))
       .catch((error) => alert(error));
   }
 
@@ -24,7 +23,6 @@ const TaskContainer = () => {
 
   return (
     <div className="bg-light">
-      <Navbar />
       <div className="container">
         <h1>Mis tareas</h1>
         {Object.keys(tasks).map((id) =>
